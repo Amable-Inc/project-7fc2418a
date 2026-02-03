@@ -1,8 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# B2B SaaS Landing Page
+
+A modern, professional landing page for a B2B SaaS product built with Next.js 14, TypeScript, Tailwind CSS, and shadcn/ui.
+
+## Features
+
+- 🎨 Modern, responsive design
+- ⚡ Built with Next.js 14 App Router
+- 🎯 TypeScript for type safety
+- 💅 Styled with Tailwind CSS
+- 🧩 shadcn/ui components
+- 📱 Fully responsive
+- 🚀 Performance optimized
+
+## Sections Included
+
+1. **Navigation** - Fixed header with CTA buttons
+2. **Hero Section** - Eye-catching headline with email capture form
+3. **Features** - 6 key features with icons
+4. **Social Proof** - Company logos
+5. **Testimonials** - Customer reviews with ratings
+6. **Pricing** - 3-tier pricing table
+7. **CTA Section** - Call-to-action before footer
+8. **Footer** - Complete footer with links
 
 ## Getting Started
 
-First, run the development server:
+### Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### Run Development Server
 
 ```bash
 npm run dev
@@ -10,27 +43,71 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Change Brand Name & Colors
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Update the brand name "SaaSify" in `app/page.tsx`
+- Modify colors in `tailwind.config.ts` and throughout the components
+- Update the gradient colors in the logo and buttons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Modify Content
 
-## Deploy on Vercel
+All content is in `app/page.tsx`. Update:
+- Hero headline and description
+- Features array
+- Testimonials array
+- Pricing plans array
+- Footer links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Add More Components
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project uses shadcn/ui. Add more components:
+
+```bash
+npx shadcn-ui@latest add [component-name]
+```
+
+## Tech Stack
+
+- **Framework:** Next.js 14
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Components:** shadcn/ui
+- **Icons:** Lucide React
+- **Fonts:** Inter (Google Fonts)
+
+## Project Structure
+
+```
+/home/user/project/
+├── app/
+│   ├── page.tsx          # Main landing page
+│   ├── layout.tsx        # Root layout
+│   └── globals.css       # Global styles
+├── components/
+│   └── ui/              # shadcn/ui components
+│       ├── button.tsx
+│       └── card.tsx
+├── lib/
+│   └── utils.ts         # Utility functions
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── next.config.js
+```
+
+## License
+
+MIT
